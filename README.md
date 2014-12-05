@@ -49,6 +49,8 @@ To launch a new instance, use:
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+3. Run `bundle install` to set up a local Vagrant for development
+4. Test your changes manually with `bundle exec vagrant up --provider=joyent`
+5. Commit your changes (`git commit -am 'Add some feature'`)
+6. Push to the branch (`git push origin my-new-feature`)
+7. Create new Pull Request
