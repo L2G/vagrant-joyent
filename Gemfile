@@ -14,5 +14,5 @@ group :development, :test do
 end
 
 group :plugins do
-  gem 'vagrant-joyent', path: '.'
+  gem 'L2G-vagrant-joyent', require: 'vagrant-joyent', path: '.'
 end

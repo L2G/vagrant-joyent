@@ -2,12 +2,12 @@ $:.unshift File.expand_path("../lib", __FILE__)
 require "vagrant-joyent/version"
 
 Gem::Specification.new do |s|
-  s.name          = "vagrant-joyent"
+  s.name          = "L2G-vagrant-joyent"
   s.version       = VagrantPlugins::Joyent::VERSION
   s.licenses      = ['Apache-2.0']
   s.platform      = Gem::Platform::RUBY
-  s.authors       = "Sean OMeara"
-  s.email         = "someara@opscode.com"
+  s.authors       = "Lawrence Leonard Gilbert and friends"
+  s.email         = "larry@L2G.to"
   s.homepage      = "http://www.vagrantup.com"
   s.summary       = "Enables Vagrant to manage machines in Joyent cloud and SDC"
   s.description   = <<-EOF
