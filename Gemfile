@@ -9,6 +9,10 @@ group :development do
   gem 'vagrant', git: 'https://github.com/mitchellh/vagrant.git'
 end
 
+group :development, :test do
+  gem 'vagrant-spec', github: 'mitchellh/vagrant-spec'
+end
+
 group :plugins do
   gem 'vagrant-joyent', path: '.'
 end
