@@ -55,6 +55,11 @@ module VagrantPlugins
         use_unless_machine_not_created(SSHExec)
       end
 
+      # This action is called to send a single(?) SSH command to the machine.
+      def self.action_ssh_run
+        use_unless_machine_not_created(SSHRun)
+      end
+
       # This action is called to bring the box up from nothing.
       def self.action_up
         Vagrant::Action::Builder.new.tap do |b|
