@@ -2,7 +2,7 @@ $:.unshift File.expand_path("../lib", __FILE__)
 require "vagrant-joyent/version"
 
 Gem::Specification.new do |s|
-  s.name          = "L2G-vagrant-joyent"
+  s.name          = "vagrant-joyent-L2G"
   s.version       = VagrantPlugins::Joyent::VERSION
   s.licenses      = ['Apache-2.0']
   s.platform      = Gem::Platform::RUBY
