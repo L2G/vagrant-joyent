@@ -6,8 +6,8 @@ module VagrantPlugins
       # This action reads the state of the machine and puts it in the
       # `:machine_state_id` key in the environment.
       class ReadState
-        NOT_CREATED_STATES = %w(shutting-down terminated)
-        NORMAL_STATES      = %w(running)
+        NOT_CREATED_STATES = %w(deleted shutting-down terminated)
+        NORMAL_STATES      = %w(provisioning running stopped)
 
         def initialize(app, env)
           @app    = app
