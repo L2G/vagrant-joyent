@@ -82,3 +82,15 @@ shown below in all caps: `LIKE_THIS`).
 6. Commit your changes (`git commit -am 'Add some feature'`)
 7. Push to the branch (`git push origin my-new-feature`)
 8. Create new Pull Request
+
+---
+
+A ruby translation project managed on [Locale](http://www.localeapp.com/) that's open to all!
+
+## Contributing to vagrant-joyent
+
+- Edit the translations directly on the [vagrant-joyent](http://www.localeapp.com/projects/public?search=vagrant-joyent) project on Locale.
+- **That's it!**
+- The maintainer will then pull translations from the Locale project and push to Github.
+
+Happy translating!
