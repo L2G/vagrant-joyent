@@ -40,6 +40,12 @@ en:
         below:
 
         %{message}
+      state_error: |-
+        Joyent reported an unrecognized machine state.
+        Please report this as a bug in the vagrant-joyent plugin.
+
+        Machine ID: %{machine_id}
+        State: %{machine_state}
       rsync_error: |-
         There was an error when attemping to rsync a share folder.
         Please inspect the error message below for more info.
@@ -54,8 +60,25 @@ en:
       long_not_created: |-
         The Joyent instance is not created. Run `vagrant up` to create it.
 
+      short_provisioning: |-
+        provisioning
+      long_provisioning: |-
+        The Joyent instance is still being created. Vagrant normally waits until the
+        instance has been created before working with it, so it could have been
+        interrupted prematurely during `vagrant up`. Please wait a few minutes and
+        try again. You may need to run `vagrant provision` once the instance is
+        running.
+
       short_running: |-
         running
       long_running: |-
         The Joyent instance is running. To stop this machine, you can run
         `vagrant halt`. To destroy the machine, you can run `vagrant destroy`.
+
+      short_stopped: |-
+        stopped
+      long_stopped: |-
+        The Joyent instance is stopped but still accruing charges on your account.
+        This is not a state that this plugin can handle at present. You should
+        either run `vagrant destroy` to delete it and stop charges, or restart it
+        yourself via the Joyent UI.
