@@ -40,6 +40,12 @@ en:
         below:
 
         %{message}
+      state_error: |-
+        Joyent reported an unrecognized machine state.
+        Please report this as a bug in the vagrant-joyent plugin.
+
+        Machine ID: %{machine_id}
+        State: %{machine_state}
       rsync_error: |-
         There was an error when attemping to rsync a share folder.
         Please inspect the error message below for more info.

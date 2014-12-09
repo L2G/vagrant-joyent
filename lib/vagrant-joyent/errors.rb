@@ -11,6 +11,10 @@ module VagrantPlugins
         error_key(:fog_error)
       end
 
+      class StateError < VagrantJoyentError
+        error_key(:state_error)
+      end
+
       class RsyncError < VagrantJoyentError
         error_key(:rsync_error)
       end
