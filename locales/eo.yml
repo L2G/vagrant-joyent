@@ -1,0 +1,30 @@
+eo:
+  vagrant_joyent:
+    already_created: La maŝino estas jam kreiĝita.
+    config:
+      api_url_required: 
+      dataset_required: 
+      keyname_required: 
+      node_name_required: 
+      ssh_username_required: 
+      username_required: 
+    errors:
+      fog_error: 
+      rsync_error: 
+    launching_instance: Lan̂cas aperon per la jena algordaĵo…
+    not_created: La apero ne estas kreiĝita. Bonvolu unue plenumi `vagrant up`.
+    ready: 
+    rsync_folder: 
+    states:
+      long_not_created: 
+      long_running: 
+      short_deleted: 
+      short_failed: 
+      short_not_created: ne kreiĝata
+      short_offline: 
+      short_provisioning: 
+      short_running: 
+    terminating: 
+    waiting_for_ready: 
+    waiting_for_ssh: 
+    will_not_destroy: 

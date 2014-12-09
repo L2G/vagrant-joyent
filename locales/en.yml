@@ -1,39 +1,13 @@
 en:
   vagrant_joyent:
-    already_created: |-
-      The machine is already created.
-    launching_instance: |-
-      Launching an instance with the following settings...
-    not_created: |-
-      Instance is not created. Please run `vagrant up` first.
-    ready: |-
-      Machine is booted and ready for use!
-    rsync_folder: |-
-      Rsyncing folder: %{hostpath} => %{guestpath}
-    terminating: |-
-      Terminating the instance...
-    waiting_for_ready: |-
-      Waiting for instance to become "ready"...
-    waiting_for_ssh: |-
-      Waiting for SSH to become available...
-    will_not_destroy: |-
-      The instance '%{name}' will not be destroyed, since the confirmation
-      was declined.
-
+    already_created: The machine is already created.
     config:
-      username_required: |-
-        A Joyent Username must be specified via "joyent.username"
-      keyname_required: |-
-        A Joyent Keyname must be specified via "joyent.keyname"
-      api_url_required: |-
-        A Joyent Datacenter API endpoint must be specified via "joyent.api_url"
-      dataset_required: |-
-        A Joyent Dataset must be specified via "joyent.dataset"
-      node_name_required: |-
-        A Node Name must be specified via "joyent.node_name"
-      ssh_username_required: |-
-        An SSH username must be specified via "joyent.ssh_username"
-
+      api_url_required: A Joyent Datacenter API endpoint must be specified via "joyent.api_url"
+      dataset_required: A Joyent Dataset must be specified via "joyent.dataset"
+      keyname_required: A Joyent Keyname must be specified via "joyent.keyname"
+      node_name_required: A Node Name must be specified via "joyent.node_name"
+      ssh_username_required: An SSH username must be specified via "joyent.ssh_username"
+      username_required: A Joyent Username must be specified via "joyent.username"
     errors:
       fog_error: |-
         There was an error talking to Joyent. The error message is shown
@@ -47,15 +21,24 @@ en:
         Host path: %{hostpath}
         Guest path: %{guestpath}
         Error: %{stderr}
-
+    launching_instance: Launching an instance with the following settings...
+    not_created: Instance is not created. Please run `vagrant up` first.
+    ready: Machine is booted and ready for use!
+    rsync_folder: 'Rsyncing folder: %{hostpath} => %{guestpath}'
     states:
-      short_not_created: |-
-        not created
-      long_not_created: |-
-        The Joyent instance is not created. Run `vagrant up` to create it.
-
-      short_running: |-
-        running
+      long_not_created: The Joyent instance is not created. Run `vagrant up` to create it.
       long_running: |-
         The Joyent instance is running. To stop this machine, you can run
         `vagrant halt`. To destroy the machine, you can run `vagrant destroy`.
+      short_deleted: deleted
+      short_failed: failed
+      short_not_created: not created
+      short_offline: offline
+      short_provisioning: provisioning
+      short_running: running
+    terminating: Terminating the instance...
+    waiting_for_ready: Waiting for instance to become "ready"...
+    waiting_for_ssh: Waiting for SSH to become available...
+    will_not_destroy: |-
+      The instance '%{name}' will not be destroyed, since the confirmation
+      was declined.
