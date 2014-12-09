@@ -74,6 +74,17 @@ shown below in all caps: `LIKE_THIS`).
 
 ## Contributing
 
+### Adding translations
+
+Our translation project is managed on [Locale](http://www.localeapp.com/) and is
+open to all.
+
+1. Edit the translations directly on the [vagrant-joyent](http://www.localeapp.com/projects/public?search=vagrant-joyent) project on Locale.
+2. **That's it!**
+3. The maintainer will then pull translations from the Locale project and push to GitHub.
+
+### Hacking the code
+
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Run `bundle install` to set up a local Vagrant for development
@@ -83,14 +94,3 @@ shown below in all caps: `LIKE_THIS`).
 7. Push to the branch (`git push origin my-new-feature`)
 8. Create new Pull Request
 
----
-
-A ruby translation project managed on [Locale](http://www.localeapp.com/) that's open to all!
-
-## Contributing to vagrant-joyent
-
-- Edit the translations directly on the [vagrant-joyent](http://www.localeapp.com/projects/public?search=vagrant-joyent) project on Locale.
-- **That's it!**
-- The maintainer will then pull translations from the Locale project and push to Github.
-
-Happy translating!
