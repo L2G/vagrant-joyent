@@ -23,6 +23,10 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency "rake", "~> 10.1"
   s.add_development_dependency "rspec", [">= 2.99", "< 3.1"]
+  s.add_development_dependency "bundler"
+  s.add_development_dependency "jeweler", "> 1.6.4"
+  s.add_development_dependency "i18n-spec"
+  s.add_development_dependency "localeapp"
 
   # The following block of code determines the files that should be included
   # in the gem. It does this by reading all the files in the directory where
